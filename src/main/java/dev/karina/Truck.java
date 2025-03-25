@@ -10,6 +10,9 @@ public class Truck extends Vehicle {
 
     @Override
     public int calculateToll(int i) {
+        if (numAxles <= 0) {
+            throw new IllegalStateException("Number of axles must be greater than 0");
+        }
         return numAxles * 50;
     }
 }
