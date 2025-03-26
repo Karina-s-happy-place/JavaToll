@@ -33,4 +33,11 @@ public class TollTest {
         assertEquals("ABC123", vehicles.get(0).getPlate());
         assertEquals("XYZ456", vehicles.get(1).getPlate());
     }
+
+    @Test
+    public void testEmptyTollStation() {
+        Toll toll = new Toll("North Toll", "Oviedo");
+        assertEquals(0, toll.getTotalAmount());
+        assertEquals(0, toll.getVehicles().size());
+    }
 }
