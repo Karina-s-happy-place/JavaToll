@@ -40,4 +40,17 @@ public class TollTest {
         assertEquals(0, toll.getTotalAmount());
         assertEquals(0, toll.getVehicles().size());
     }
+
+    @Test
+    public void testPrintSummary() {
+        Toll toll = new Toll("North Toll", "Oviedo");
+        Vehicle car = new Car("ABC123");
+        Vehicle truck = new Truck("ASJ092", 6);
+
+        toll.registerVehicle(car);
+        toll.registerVehicle(truck);
+
+        assertEquals(300, toll.getTotalAmount());
+        toll.printSummary();
+    }
 }
