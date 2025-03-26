@@ -45,7 +45,7 @@ public class TollTest {
     public void testPrintSummary() {
         Toll toll = new Toll("North Toll", "Oviedo");
         Vehicle car = new Car("ABC123");
-        Vehicle truck = new Truck("ASJ092", 6);
+        Vehicle truck = new Truck("ASJ092", 4);
 
         toll.registerVehicle(car);
         toll.registerVehicle(truck);

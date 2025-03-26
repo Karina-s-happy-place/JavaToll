@@ -29,4 +29,13 @@ public class Toll {
         return vehicles;
     }
 
+    public void printSummary() {
+        System.out.println("Toll Station: " + name + " (" + city + ")");
+        System.out.println("Vehicles Passed");
+        for (Vehicle vehicle : vehicles) {
+            System.out.println("- Plate:" + vehicle.getPlate() + " Toll: $" + vehicle.calculateToll(0));
+        }
+        System.out.println("Total Amount Collected: $" + totalAmount);
+    }
+
 }
