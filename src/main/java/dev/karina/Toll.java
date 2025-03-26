@@ -25,4 +25,8 @@ public class Toll {
         return totalAmount;
     }
 
+    public List<Vehicle> getVehicles() {
+        return vehicles;
+    }
+
 }
