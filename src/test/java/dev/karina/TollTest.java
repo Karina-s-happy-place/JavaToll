@@ -13,6 +13,6 @@ public class TollTest {
 
         toll.registerVehicle(car);
 
-        assertEquals(toll, toll.getTotalAmount());
+        assertEquals(100, toll.getTotalAmount());
     }
 }
